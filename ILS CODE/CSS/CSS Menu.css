@@ -118,3 +118,10 @@ body {
     width: 300px;
     justify-content: center;
 }
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
