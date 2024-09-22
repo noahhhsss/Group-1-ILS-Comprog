@@ -1,3 +1,120 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 20px;
+}
+
+/*NAVBAR*/
+.navbar {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(239, 50, 9);
+}
+.navbardiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    float: left;
+    cursor: pointer;
+}
+.navbar a:hover {
+    color: rgb(236, 240, 11);
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/*MAIN SECTION*/
+.main {
+    padding: 0;
+}
+/*Sidebar*/
+.Sidebar {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+    position:static;
+    overflow: auto;
+    background-color: grey;
+}
+.Sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 90px;
+}
+.Sidebar a:hover {
+    background-color: white;
+}
+
+/*Cards and Images*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.card {
+    background-color: grey;
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card h2 {
+    text-align: center;
+}
+.card p {
+    text-align: center;
+    margin: 10px;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 90px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.card a:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.card-image {
+    justify-content: center;
+}
+.card-image img{
+    margin: 10px;
+    margin-left: 30px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
 }
