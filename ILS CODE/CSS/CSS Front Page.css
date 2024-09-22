@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+section {
+    padding: 50px 70px;
+}
+
+/*NAVBAR*/
+.navbar {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(239, 50, 9);
+}
+.navbardiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    float: left;
+    cursor: pointer;
+}
+.navbar a:hover {
+    color: rgb(236, 240, 11);
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/*FRONT PAGE --------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SLIDESHOW*/
+#Slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+.Slideshow-wrapper {
+    /*Calculates the pixels per slides*/
+    width: calc(728px * 4);
+
+    /*duration of the slide*/
+    animation: slide 10s ease infinite;
+}
+.Slides {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+/*ANIMATION*/
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+
+/*CHOOKS TO GO MENU --------------------------------------------------------------------------------------------------------------*/
+
+/*SIDEBAR*/
+.Sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+}
+.Sidebar a{
+    display: block;
+    padding: 40px;
+    text-decoration: none;
+    color: black;
+}
+.Sidebar a:hover {
+    background-color: white;
+}
+
+/*MAIN SECTION*/
+.row {
+    display: flex;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 3px;    
+    background-color: grey;
+}
+    
+/*FLEXBOX*/
+@media screen and (max-width: 700px) {
+    .Sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .Sidebar a {float: left;}
+}
+@media screen and (max-width: 400px) {
+    .Sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
