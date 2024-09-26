@@ -5,6 +5,12 @@
 	outline: 0;
 	padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+div {
+    display: block;
+}
 
 /*MAIN SITE --------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -30,7 +36,7 @@
     display: inline;
 }
 
-/*NAVBAR*/
+/*NAVBAR*************************************************************************************************************************/
 .navbar {
     display: inline;
     float: right;
@@ -54,10 +60,11 @@
     transition: var(--trans, color .4s ease 0s);
 }
 
-/*PAGE CONTAINER: "ITO UNG GITNA"*/
+/*PAGE CONTAINER: "ITO UNG GITNA"***********************************************************************************************************************************************/
 #grid-container {
     position: static;
 	display: grid; 
+    column-gap: 0px;
 	height: auto;
 	width: 100%;
 	grid-template-columns: 100%;
@@ -71,16 +78,18 @@
     width: 100%;
     position: relative;
 }
-.image-background {
-    position: relative; 
-}
 .centered {
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     right: 50%;
 }
 
 /*SECOND PAGE*/
-
-
+.second-image-background img {
+    height: 574px;
+    width: 1014px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 /*FOOTER*******************************************************************************************************************************/
