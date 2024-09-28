@@ -91,12 +91,114 @@ div {
 .menu-container {
     display: flex;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     justify-content: center;
+}
+.menu-image img {
+    position: relative;
+    height: 1200px;
+    width: 970px;
 }
 
 
-/*FOOTER*/
+/*FOOTER************************************************************************************************************************************/
 footer {
     background-color: black;
+}
+.footer-container {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+.footer-content {
+    padding: 30px 10px 30px 10px;
+}
+.footer-info-flex {
+    display: flex;
+}
+.footer-logo {
+    margin: -80px 0px 0px 0px;
+    padding-left: 155px;
+}
+/*FOOTER LOGO*/
+#image-logo img{
+    float: right;
+    height: 50%;
+    width: 50%;    
+}
+
+/*FOOTER INFO (NUMBER, LOCATION)*/
+.footer-address-flex {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.footer-info-address {
+     color: rgba(255, 255, 255, 0.79);
+}
+.footer-info-address li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/*FOOTER WIDGETS/COPYRIGHT*/
+#footer-widgets {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    color: rgba(255, 255, 255, 0.25);
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 180px;
+    margin-right: 180px;
+
+}
+.footer-widgets-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-widgets-container {
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.fa {
+    padding: 15px;  
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+/*FACEBOOK*/
+.fa-facebook {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+/*TWITTER*/
+.fa-twitter {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+/*INSTAGRAM*/
+.fa-instagram {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+/*FOOTER COPYRIGHT*/
+.footer-copyright {
+    padding: 10px;
+    margin-right: 80px;
+    float: right;
+}
+.copyright-text {
+    text-align: right;
 }
