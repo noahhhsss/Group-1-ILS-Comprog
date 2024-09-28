@@ -17,11 +17,13 @@ div {
 
 /*HEADER*/
 #site-header {
-    display: grid;
+    display: flex;
+    background-image: url(https://i.ibb.co/nmc184m/Front-page-deisgn2-png.png);
+    background-size: cover;
+    padding-bottom: 50%;
+    justify-content: center;
 }
 #site-header-grid {
-    margin-left: 170px;
-    margin-right: 170px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
@@ -29,12 +31,14 @@ div {
 
 /*LOGO*/
 #logo-image {
-    height: 110px;
-    width: 360px;
+    height: 100px;
+    width: 310px;
     float: left;
 }
 .logo {
-    display: inline;
+    display: inline-block;
+    margin-right: 220px;
+    margin-top: 10px;
 }
 
 /*NAVBAR*************************************************************************************************************************/
@@ -51,14 +55,30 @@ div {
 }
 .nav-buttons{
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 25px;
-    color: black;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
     font-family: sans-serif;
+}
+.nav-buttons-reservation {
+    transition: all 0.5s ease;
+    margin-left: 150px;
+}
+.nav-buttons-reservation a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(198, 48, 44);
+    font-family: sans-serif;
+    margin-left: 150px;
 }
 .nav-buttons:hover {
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
+}
+.nav-buttons-reservation:hover {
+    transform: scale(1.1);  
 }
 
 /*PAGE CONTAINER: "ITO UNG GITNA"***********************************************************************************************************************************************/
@@ -75,7 +95,6 @@ div {
 
 /*FIRST PAGE*/
 .first-page img{
-    height: 100%;
     width: 100%;
     position: relative;
 }
