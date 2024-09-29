@@ -18,7 +18,7 @@ div {
 /*HEADER*/
 #site-header {
     display: flex;
-    background-image: url(https://i.ibb.co/nmc184m/Front-page-deisgn2-png.png);
+    background-image: url(https://i.ibb.co/nmc184m/Front-page-deisgn2-png.pngb);
     background-size: cover;
     padding-bottom: 50%;
     justify-content: center;
@@ -122,13 +122,141 @@ div {
 }
 
 /*SECOND PAGE*/
-.second-image-background img {
-    height: 574px;
-    width: 1014px;
+
+/*OVERVIEW CONTENT*/
+#second-page {
+    background-color: rgb(198, 48, 44);
     position: relative;
-    height: 100%;
-    width: 100%;
+    padding: 70px 0px 70px 0px;
 }
+.overview-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/*OVERVIEW IMAGE*/
+.overview-image {
+    display: flex;
+}
+.overview-image-container img {
+    height: 800px;
+    width: 550px;
+}
+
+/*OVERVIEW INFORMATION*/
+.overview-info {
+    display: flex;
+}
+.overview-info-container {
+    display: block;
+    margin: 90px 30px 90px 30px;
+}
+
+/*OVERVIEW TITLE*/
+.overview-title h2{
+    color: white;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0px 10px 0px;
+}
+
+/*OVERVIEW SUBTITLE*/
+.overview-subtitle {
+    color: #f6f6f6;
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+
+/*OVERVIEW INFO PARAGRAPH*/
+.overview-info-paragraph {
+    color: #CCCCCC;
+    font-size: 20px;
+}
+
+/*READMORE BUTTON*/
+.readmore-container {
+    margin: 15px 0px 20px 0px;
+}
+.readmore-button {
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-width: 1px 1px 1px 1px;
+    padding: 15px 30px;
+    transition: all 0.5s ease;
+}
+.readmore-button {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+.readmore-button:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: rgb(198, 48, 44);
+    cursor: pointer;
+}
+
+/*THIRD PAGE*/
+#third-page {
+    background-color: #ffffff;
+    position: relative;
+    padding: 70px 0px 70px 0px;
+    margin: 70px 0px 70px 0px;
+}
+.reservation-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: auto;
+    position: relative;
+}
+
+/*RESERVATION INFO*/
+.reservation-info {
+    display: inline-block;
+    margin: 100px 0px 50px 0px;
+}
+/*RESERVATION INFO TITLE*/
+.reservation-title h2 {
+    font-size: 30px;
+}
+
+/*RESERVATION INFO SUBTITLE*/
+.reservation-subtitle h2{
+    font-size: 45px;
+}
+
+/*RESERVATION INFO BUTTON*/
+.reservation-button-container {
+    margin: 10px 0px 10px 0px;
+}
+.reservation-button {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 15px 30px 15px 30px;
+    border-color: #CCCCCC;
+    transition: all 1s ease;
+    font-size: 15px;
+}
+.reservation-button:hover {
+    transform: scale(1.1);
+    border-color: rgb(198, 48, 44);
+    background-color: rgb(198, 48, 44);
+    color: #ffffff;
+}
+
+/*RESERVATION IMAGE*/
+.reservation-image {
+    display: flex;
+}
+.reservation-image img {
+    height: 350px;
+    width: 700px;
+}
+
 /*FOOTER*******************************************************************************************************************************/
 footer {
     background-color: black;

@@ -126,24 +126,27 @@ div {
     width: 35%;
     height: 95%;  
 }
-.Matsu{
+.Matsu b{
     position:relative;
     bottom:-35px;
     margin:70px;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(198,48,44);
 }
 .rika{
     position:relative;
     bottom:30px;
     margin:70px;
-    font-size: 20px;
+    font-size: 23px;
+    color: #232222;
 }
 .paragraph{
     position: relative;
     bottom:75px;
     margin:70px;
     font-size: 18px;
+    color: #575757;
 }
 @keyframes transition{
     from{
