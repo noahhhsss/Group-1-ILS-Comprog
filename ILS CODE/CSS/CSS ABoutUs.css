@@ -1,0 +1,260 @@
+* {
+    background: transparent;
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+div {
+    display: block;
+}
+
+/*MAIN SITE******************************************************************************************************************************************************************************/
+
+/*SITE HEADER*********************************************************************************************/
+#site-header {
+    display: grid;
+    animation:transition 0.50s;
+}
+#site-header-grid {
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    animation:transition 0.50s;
+}
+
+/*LOGO*/
+#logo-image {
+    height: 110px;
+    width: 360px;
+    float: left;
+    animation:transition 0.50s;
+}
+.logo {
+    display: inline;
+    animation:transition 0.50s;
+} 
+    
+.navbar {
+    display: inline;
+    float: right;
+    margin-top: 45px;
+    margin-right: 50px;
+    margin-left: 25px;
+    animation:transition 0.50s;
+}
+.navbar li {
+    list-style-type: none;
+    display: inline;
+    animation:transition 0.50s;
+}
+.nav-buttons{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    animation:transition 0.50s;
+}
+.nav-buttons:hover {
+    color:  rgb(198,48,44);
+    transition: var(--trans, color .4s ease 0s);
+    animation:transition 0.50s;
+}
+
+/*SITE PAGE SECTION*******************************************************************************************************************/
+.image-transition img{
+    height: 200%;
+    width: 100%;
+    position: relative;
+    animation:transition 0.50s;
+}
+/*ramen about us Text*/
+.ramen-Aboutus-text{   
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+    padding: 10%;
+    font-size: 60px;
+    display: inline-flex;
+    animation:transition 0.50s;
+}
+.ramen-Aboutus-text h2 {
+    margin-left: 15px;
+}
+/*ramen matsurika*/
+.ramen-matsurika{   
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+    padding: 10%;
+    color: rgb(198,48,44);
+    font-size: 50px;
+    animation:transition 0.50s;
+}
+/*ramen-matsurika-text*/
+.ramen-matsurika-text{   
+    position: absolute;
+    text-align: center;
+    top:25%;
+    padding: 10%;
+    color: white;
+    font-size: 25px;
+    animation:transition 0.50s;
+}
+.ramen-matsurika-text p {
+    display: inline;
+}
+.color-text {
+    color: rgb(198,48,44);
+}
+/*how it started*/
+.about-matsurika img{
+    position: absolute;
+    left:55%;
+    text-align: center;
+    margin-top:3%;
+    width: 35%;
+    height: 95%;  
+}
+.Matsu{
+    position:relative;
+    bottom:-35px;
+    margin:70px;
+    font-size: 40px;
+    color: rgb(198,48,44);
+}
+.rika{
+    position:relative;
+    bottom:30px;
+    margin:70px;
+    font-size: 20px;
+}
+.paragraph{
+    position: relative;
+    bottom:75px;
+    margin:70px;
+    font-size: 18px;
+}
+@keyframes transition{
+    from{
+        opacity: 0;
+        transform: rotate(-2deg);
+    } 
+    to{
+        opacity: 1;
+        transform:rotate(0);
+    }
+
+}
+
+/*FOOTER************************************************************************************************************************************/
+footer {
+    background-color: black;
+}
+.footer-container {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+.footer-content {
+    padding: 30px 10px 30px 10px;
+}
+.footer-info-flex {
+    display: flex;
+}
+.footer-logo {
+    margin: -80px 0px 0px 0px;
+    padding-left: 155px;
+}
+/*FOOTER LOGO*/
+#image-logo img{
+    float: right;
+    height: 50%;
+    width: 50%;    
+}
+
+/*FOOTER INFO (NUMBER, LOCATION)*/
+.footer-address-flex {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.footer-info-address {
+     color: rgba(255, 255, 255, 0.79);
+}
+.footer-info-address li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/*FOOTER WIDGETS/COPYRIGHT*/
+#footer-widgets {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    color: rgba(255, 255, 255, 0.25);
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 180px;
+    margin-right: 180px;
+
+}
+.footer-widgets-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-widgets-container {
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.fa {
+    padding: 15px;  
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+/*FACEBOOK*/
+.fa-facebook {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+/*TWITTER*/
+.fa-twitter {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+/*INSTAGRAM*/
+.fa-instagram {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+/*FOOTER COPYRIGHT*/
+.footer-copyright {
+    padding: 10px;
+    margin-right: 80px;
+    float: right;
+}
+.copyright-text {
+    text-align: right;
+}
