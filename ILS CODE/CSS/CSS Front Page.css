@@ -238,7 +238,7 @@ div {
     border-width: 1px 1px 1px 1px;
     padding: 15px 30px 15px 30px;
     border-color: #CCCCCC;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     font-size: 15px;
 }
 .reservation-button:hover {
