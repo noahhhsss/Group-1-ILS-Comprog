@@ -38,7 +38,7 @@ div {
 }
 .logo {
     display: inline-block;
-    margin-right: 220px;
+    margin-right: 330px;
     margin-top: 10px;
     animation:transition 0.50s;
 }
@@ -63,24 +63,24 @@ div {
     color: white;
     font-family: sans-serif;
 }
-.nav-buttons-reservation {
+.nav-buttons-login {
     transition: all 0.5s ease;
-    margin-left: 150px;
 }
-.nav-buttons-reservation a {
+.nav-buttons-login a {
     text-decoration: none;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 24px;
     color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
     background-color: rgb(198, 48, 44);
     font-family: sans-serif;
-    margin-left: 150px;
 }
 .nav-buttons:hover {
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
 }
-.nav-buttons-reservation:hover {
+.nav-buttons-login:hover {
     transform: scale(1.1);  
 }
 

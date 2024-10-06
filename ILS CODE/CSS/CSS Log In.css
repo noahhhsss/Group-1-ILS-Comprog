@@ -1,26 +1,19 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
     background: transparent;
-	border: 0;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-    font-family: sans-serif;
-}
-html {
-    scroll-behavior: smooth;
-}
-div {
-    display: block;
 }
 
-/*MAIN SITE --------------------------------------------------------------------------------------------------------------------------------*/
 /*HEADER*/
 #site-header {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 #site-header-grid {
-    margin-left: 170px;
-    margin-right: 170px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
@@ -28,16 +21,18 @@ div {
 
 /*LOGO*/
 #logo-image {
-    height: 110px;
-    width: 360px;
+    height: 100px;
+    width: 310px;
     float: left;
-    animation:transition 0.50s;
 }
 .logo {
-    display: inline;
+    display: inline-block;
+    margin-right: 330px;
+    margin-top: 10px;
+    animation:transition 0.50s;
 }
 
-/*NAVBAR*/
+/*NAVBAR*************************************************************************************************************************/
 .navbar {
     display: inline;
     float: right;
@@ -52,62 +47,32 @@ div {
 }
 .nav-buttons{
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 25px;
-    color: black;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
     font-family: sans-serif;
 }
 .nav-buttons-login {
     transition: all 0.5s ease;
+    border: none;
 }
 .nav-buttons-login a {
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 25px;
-    padding: 5px 7px 5px 7px;
+    font-size: 24px;
     color: white;
-    background-color: rgb(198,48,44);
+    padding: 5px 7px 5px 7px;
     border-radius: 5px;
+    background-color: rgb(198, 48, 44);
     font-family: sans-serif;
-    transition: all 0.5s ease;
 }
 .nav-buttons:hover {
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
 }
 .nav-buttons-login:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  
 }
 
-
-/*MAIN SECTION*/
-.grid-container {
-    display: grid;
-    object-fit: cover;
-}
-.image-top {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-.image-top img {
-    width: 100%;
-    height: 308px;
-    object-fit: cover;
-    animation:transition 0.50s;
-}
-.image-text {
-   color: white;
-   position: absolute;
-   bottom: 120px;
-   left: 100px;
-   font-size: 30px;
-   animation:transition 0.50s;
-}
-.image-text h1 {
-    font-size: 50px;
-    animation:transition 0.50s;
-}
 /*ANIMATION WHEN REFRESHING*/
 @keyframes transition{
     from{
@@ -121,20 +86,84 @@ div {
 
 }
 
-.menu-container {
+/*MAIN FORM*******************************************************************************/
+.image-background{
+    background-image: url(https://i.ibb.co/Wp25BHS/Untitled-design-5.png); 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.container{
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    align-items: center;
     justify-content: center;
+    min-height: 60vh;
 }
-.menu-image img {
-    position: relative;
-    height: 1200px;
-    width: 970px;
+.box{
+     display: flex;
+     flex-direction: column;
+     background-color: rgb(0 0 0 / .8);
+     color: #fff;
+     padding: 25px 25px;
+     border-radius: 20px;
+     box-shadow: 0 0 128px 0 rgba(0,0,0,0.4),
+                 0 32px 64px -48px rgba(0,0,0,0.7);
+}
+.form-box{
+    width: 450px;
+    margin: 150px 10px 250px;
+}
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box .input input{
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.button{
+    height: 35px;
+    background: rgba(226, 24, 24, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.button:hover{
+    opacity: 0.82;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+}
+.links a {
+    color: white;
+    transition: all 0.5s ease;
+}
+.links a:hover {
+    color: #CCCCCC;
 }
 
-
-/*FOOTER************************************************************************************************************************************/
+/*FOOTER*************************************************************************************************/
 footer {
     background-color: black;
 }
@@ -201,8 +230,8 @@ footer {
 }
 .fa {
     padding: 15px;  
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;

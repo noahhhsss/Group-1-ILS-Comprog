@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--LINK NG EXTERNAL CSS FILE-->
-    <link rel="stylesheet" href="../CSS/CSS Menu.css">
-    
+    <link rel="stylesheet" href="../CSS/CSS Log In.css">
+        
     <!--TAB LOGO-->
     <link rel="Icon" href="https://i.ibb.co/c3DkSHT/matsurika-10.png">
 
@@ -16,59 +16,60 @@
     <!--FOOTER ICONS (FACEBOOK, INSTAGRAM, TWITTER)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-</head>
-
 <body>
-<!--Navbar------------------------------------------------------------------------------------------------------------------->
-<!--NAVBAR-->
-<header id="site-header">
-    <div id="site-header-grid">
-        <!--LOGO-->
-        <div class="Logo">
-            <a href="../HTML/RamenMatsurikaFrontPage.html">
-                <img id="logo-image" src="https://i.ibb.co/BPLnq8v/Matsurika-LOGO-png.png" alt="">
-            </a>
-        </div>
 
+    <section class="image-background">
         <!--NAVBAR-->
-        <nav class="navbar">
-            <!--LINK NG NAVBAR-->
-            <ul>
-                <li><a class="nav-buttons" href="../HTML/RamenMatsurikaFrontPage.html">HOME</a></li>
-                <li><a class="nav-buttons" href="../HTML/RamenMatsurikaMenu.html">MENU</a></li>
-                <li><a class="nav-buttons" href="../HTML/RamenMatsurikaAboutUs.html">ABOUT</a></li>
-                <li><button class="nav-buttons-login"><a href="../HTML/LogInPage.html">LOG IN</a></button></li>
-            </ul>
-            </div>
-        </nav>
-    </div>
-</header>
+            <header id="site-header">
+                <div id="site-header-grid">
+                    <!--LOGO-->
+                    <div class="logo">
+                        <a href="../HTML/RamenMatsurikaFrontPage.html">
+                            <img id="logo-image" src="https://i.ibb.co/zS94myh/Branding-Word-1200-x-200-px-1.png" alt="">
+                        </a>
+                    </div>
 
-<!--MAIN SECTION-------------------------------------------------------------------------------------------------------------------------->
-<main class="page-menu">
-    <div class="grid-container">
-        <div class="image-top-container">
-            <div class="image-top">
-                <img src="https://i.ibb.co/Pr5KWcj/Juliana-Silva-Present-14.png" alt="">
+                    <!--NAVBAR-->
+                    <nav class="navbar">
+                        <!--LINK NG NAVBAR-->
+                        <ul>
+                            <li><a class="nav-buttons" href="../HTML/RamenMatsurikaFrontPage.html">HOME</a></li>
+                            <li><a class="nav-buttons" href="../HTML/RamenMatsurikaMenu.html">MENU</a></li>
+                            <li><a class="nav-buttons" href="../HTML/RamenMatsurikaAboutUs.html">ABOUT</a></li>
+                            <li><button class="nav-buttons-login"><a  href="../HTML/LogInPage.html">LOG IN</a></button></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
 
-                <!--OPTIONAL TEXT-->
-                <div class="image-text">
-                    <h3></h3>
-                    <h1></h1>
+            <!--MAIN FORM------------------------------------------------------------------------------------------------------>
+            <div class="container">
+                <div class="box form-box">
+                    <header>Login</header>
+                    <form action="" method="post">
+                        <div class="field input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" autocomplete="off" required>
+                        </div>
+
+                        <div class="field input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" autocomplete="off" required>
+                        </div>
+
+                        <div class="field">
+                            
+                            <input type="submit" class="button" name="submit" value="Login" required>
+                        </div>
+                        <div class="links">
+                            Don't have account? <a href="SignUpPage.html">Sign up now</a>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-
-        <!--MENU IMAGE-->
-        <div class="menu-container">
-            <div  class="menu-image">
-                <img src="https://i.ibb.co/0tDRCkS/Ramen-Matsurika-Menu-2.png" alt="">
-            </div>
-        </div>
-    </div>
-</main>
-
-<!--FOOTER-------------------------------------------------------------------------------------------------------------------------------->
+    </section>
+<!--FOOTER------------------------------------------------------------------------------------------------------------>
 <footer id="footer">
     <div class="footer-container">
         <div class="footer-content">
