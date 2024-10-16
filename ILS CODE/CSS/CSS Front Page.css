@@ -52,6 +52,7 @@ div {
     display: inline-block;
     margin-right: 290px;
     margin-top: 10px;
+    margin-bottom: 10px;
     animation:transition 0.50s;
 }
 
@@ -59,7 +60,7 @@ div {
 .navbar {
     display: inline;
     float: right;
-    margin-top: 33px;
+    margin-top: 38px;
     margin-right: 50px;
     margin-left: 25px;
     animation:transition 0.50s;
@@ -75,10 +76,10 @@ div {
     color: white;
     font-family: sans-serif;
 }
-.nav-buttons-login {
+.nav-buttons-reservation {
     transition: all 0.5s ease;
 }
-.nav-buttons-login a {
+.nav-buttons-reservation a {
     text-decoration: none;
     margin-right: 15px;
     font-size: 15px;
@@ -92,7 +93,7 @@ div {
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
 }
-.nav-buttons-login:hover {
+.nav-buttons-reservation:hover {
     transform: scale(1.1);  
 }
 

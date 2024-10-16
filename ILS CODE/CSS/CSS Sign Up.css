@@ -14,21 +14,27 @@
     position: relative;
 }
 #site-header-grid {
-    margin-top: 10px;
-    margin-bottom: 10px;
     display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.header-flex {
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 
 /*LOGO*/
 #logo-image {
-    height: 100px;
-    width: 310px;
+    height: 73px;
+    width: 230px;
     float: left;
 }
 .logo {
     display: inline-block;
-    margin-right: 330px;
+    margin-right: 290px;
     margin-top: 10px;
+    margin-bottom: 10px;
     animation:transition 0.50s;
 }
 
@@ -36,7 +42,7 @@
 .navbar {
     display: inline;
     float: right;
-    margin-top: 45px;
+    margin-top: 38px;
     margin-right: 50px;
     margin-left: 25px;
     animation:transition 0.50s;
@@ -48,18 +54,18 @@
 .nav-buttons{
     text-decoration: none;
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-family: sans-serif;
 }
-.nav-buttons-login {
+.nav-buttons-reservation {
     transition: all 0.5s ease;
     background: transparent;
     border: none;
 }
-.nav-buttons-login a {
+.nav-buttons-reservation a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 15px;
     color: white;
     padding: 5px 7px 5px 7px;
     border-radius: 5px;
@@ -70,7 +76,7 @@
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
 }
-.nav-buttons-login:hover {
+.nav-buttons-reservation:hover {
     transform: scale(1.1);  
 }
 
@@ -113,7 +119,7 @@
 }
 .form-box{
     width: 450px;
-    margin: 70px 10px 200px;
+    margin: 120px 10px 200px;
 }
 .form-box header{
     font-size: 25px;

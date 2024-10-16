@@ -17,34 +17,40 @@ div {
 
 /*SITE HEADER*********************************************************************************************/
 #site-header {
-    display: grid;
-    animation:transition 0.50s;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 #site-header-grid {
-    margin-left: 170px;
-    margin-right: 170px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     display: inline-block;
-    animation:transition 0.50s;
+    width: 100%;
+    height: 100%;
+}
+.header-flex {
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 
 /*LOGO*/
 #logo-image {
-    height: 110px;
-    width: 360px;
+    height: 73px;
+    width: 230px;
     float: left;
-    animation:transition 0.50s;
 }
 .logo {
-    display: inline;
+    display: inline-block;
+    margin-right: 290px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     animation:transition 0.50s;
-} 
-    
+}
+
+/*NAVBAR*************************************************************************************************************************/
 .navbar {
     display: inline;
     float: right;
-    margin-top: 45px;
+    margin-top: 38px;
     margin-right: 50px;
     margin-left: 25px;
     animation:transition 0.50s;
@@ -52,36 +58,33 @@ div {
 .navbar li {
     list-style-type: none;
     display: inline;
-    animation:transition 0.50s;
 }
 .nav-buttons{
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 25px;
-    color: black;
+    margin-right: 30px;
+    font-size: 15px;
+    color: white;
     font-family: sans-serif;
-    animation:transition 0.50s;
 }
-.nav-buttons-login {
+.nav-buttons-reservation {
     transition: all 0.5s ease;
 }
-.nav-buttons-login a {
+.nav-buttons-reservation a {
     text-decoration: none;
     margin-right: 15px;
-    font-size: 25px;
-    padding: 5px 7px 5px 7px;
+    font-size: 15px;
     color: white;
-    background-color: rgb(198,48,44);
+    padding: 5px 7px 5px 7px;
     border-radius: 5px;
+    background-color: rgb(198, 48, 44);
     font-family: sans-serif;
-    transition: all 0.5s ease;
 }
 .nav-buttons:hover {
     color:  rgb(198,48,44);
     transition: var(--trans, color .4s ease 0s);
 }
-.nav-buttons-login:hover {
-    transform: scale(1.1);
+.nav-buttons-reservation:hover {
+    transform: scale(1.1);  
 }
 
 /*SITE PAGE SECTION*******************************************************************************************************************/
@@ -96,10 +99,10 @@ div {
     color: white;
     position: absolute;
     text-align: center;
-    top: 10%;
-    left: 25%;
+    top: -1%;
+    left: 30%;
     padding: 10%;
-    font-size: 60px;
+    font-size: 40px;
     display: inline-flex;
     animation:transition 0.50s;
 }
@@ -121,7 +124,7 @@ div {
 .ramen-matsurika-text{   
     position: absolute;
     text-align: center;
-    top:25%;
+    top:10%;
     padding: 10%;
     color: white;
     font-size: 25px;
@@ -130,9 +133,6 @@ div {
 .ramen-matsurika-text p {
     display: inline;
 }
-.color-text {
-    color: rgb(198,48,44);
-}
 /*how it started*/
 .about-matsurika img{
     position: absolute;
@@ -140,7 +140,7 @@ div {
     text-align: center;
     margin-top:3%;
     width: 35%;
-    height: 95%;  
+    height: 100%;  
 }
 .Matsu b{
     position:relative;
