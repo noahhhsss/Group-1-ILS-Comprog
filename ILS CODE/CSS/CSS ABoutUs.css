@@ -15,7 +15,7 @@ div {
 
 /*MAIN SITE******************************************************************************************************************************************************************************/
 
-/*SITE HEADER*********************************************************************************************/
+/*HEADER*/
 #site-header {
     display: flex;
     justify-content: center;
@@ -87,6 +87,7 @@ div {
     transform: scale(1.1);  
 }
 
+
 /*SITE PAGE SECTION*******************************************************************************************************************/
 .image-transition img{
     height: 200%;
@@ -99,9 +100,8 @@ div {
     color: white;
     position: absolute;
     text-align: center;
-    top: -1%;
     left: 30%;
-    padding: 10%;
+    padding: 60px 0px 0px 180px;
     font-size: 40px;
     display: inline-flex;
     animation:transition 0.50s;

@@ -51,7 +51,7 @@
     <!--MAIN FORM-------------------------------------------------------------------------------------------------------->
     <div class="site-container">
         <div class="site-flex">
-            <form action="">
+            <form action="../PHP/reservationDB.php" method="post">
                 <div class="main-form-flex">
                     <ul class="form-info">
                         <!--FORM HEADER-->
@@ -68,11 +68,11 @@
 
                             <div class="name-info">
                                 <span>
-                                    <input type="text" name="" id="" class="input-textbox">
+                                    <input type="text" name="firstName" id="firstName" class="input-textbox">
                                     <label for="" class="name">First Name</label>
                                 </span>
                                 <span class="last-name">
-                                    <input type="text" name="" id="" class="input-textbox">
+                                    <input type="text" name="lastName" id="lastName" class="input-textbox">
                                     <label for="" class="name">Last Name</label>
                                 </span>
                             </div>
@@ -83,7 +83,7 @@
                             <label for="" class="form-label">E-mail</label>
 
                             <div class="form-input">
-                                <input type="text" placeholder="ex: username@google.com" class="input-textbox form-input">
+                                <input type="text" placeholder="ex: username@google.com" class="input-textbox form-input" name="email" id="email">
                             </div>
                         </li>
 
@@ -92,7 +92,7 @@
                             <label for="" class="form-label">Phone</label>
 
                             <div class="form-input">
-                                <input type="number" class="input-textbox form-input">
+                                <input type="number" class="input-textbox form-input" name="phoneNumber" id="phoneNumber">
                             </div>
                         </li>
 
@@ -101,7 +101,7 @@
                             <label for="" class="form-label">Number of Guest</label>
 
                             <div class="form-input">
-                                <input type="number" class="input-textbox form-input">
+                                <input type="number" class="input-textbox form-input" name="numGuest" id="numGuest">
                             </div>
                         </li>
 
@@ -110,7 +110,7 @@
                             <label for="" class="form-label">Date and Time</label>
 
                             <div class="form-input">
-                                <input type="datetime-local" class="input-textbox form-input">
+                                <input type="datetime-local" class="input-textbox form-input" name="dateTime" id="dateTime">
                             </div>
                         </li>
 
@@ -119,11 +119,13 @@
                             <label for="" class="form-label">Reservation Type</label>
 
                             <div class="form-input">
-                                <select name="" id="" class="input-textbox form-input">
-                                    <option value="please-select">Please Select</option>
-                                    <option value="private">Private</option>
-                                    <option value="public">Public</option>
-                                </select>
+                                <form action="../PHP/reservationDB.php" method="post">
+                                    <select name="" id="" class="input-textbox form-input">
+                                        <option value="please-select">Please Select</option>
+                                        <option value="private">Private</option>
+                                        <option value="public">Public</option>
+                                    </select>
+                                </form>
                             </div>
                         </li>
 
@@ -131,7 +133,7 @@
                         <li class="submit-button-flex">
                             <div class="submit-button-container">
                                 <div class="submit-button">
-                                    <button><label for="">Submit</label></button>
+                                    <input type="submit" class="btn" name="submitdb" value="Submit" required>
                                 </div>
                             </div>
                         </li>
